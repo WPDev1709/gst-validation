@@ -5,25 +5,9 @@
 * Description: GST input and validation through API plugin
 * Version: 1.0
 * Author: Jumana
-* Author URI: https://jumana.com/
+
 **/
 
-// add_action( 'woocommerce_before_order_notes', 'bbloomer_add_custom_checkout_field' );
-  
-// function bbloomer_add_custom_checkout_field( $checkout ) { 
-//    $current_user = wp_get_current_user();
-//    $saved_gst_no = $current_user->gst_no;
-//    woocommerce_form_field( 'gst_no', array(        
-//       'type' => 'text',        
-//       'class' => array( 'form-row-wide' ),        
-//       'label' => 'GST Number',        
-//       'placeholder' => 'Add GST Number',        
-//       // 'required' => true,
-//       // 'pattern' => '^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$',      
-     
-//       'default' => $saved_gst_no,        
-//    ), $checkout->get_value( 'gst_no' ) ); 
-// }
 
 
 add_action( 'woocommerce_before_order_notes', 'display_extra_fields_after_billing_address' );
